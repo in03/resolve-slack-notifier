@@ -10,9 +10,9 @@ packages = [{include = "resolve_renderbot"}]
 [tool.poetry.dependencies]
 python = ">=3.7.2,<4" 
 slack-sdk = "^3.19.1"
-rich = "^12.6.0"
 pydavinci = {git = "https://github.com/in03/pydavinci"}
 python-dotenv = "^0.21.0"
+loguru = "^0.6.0"
 
 [build-system]
 requires = ["poetry-core"]

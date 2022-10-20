@@ -43,7 +43,7 @@ def main():
     message = f"Slack Message sent by hostname: {socket.gethostname()}, project name: {project.name}\n"
     message += f"Message initiated by: {sys.argv[0]}\n"
     message += f"job id: {job}, job status: {status}, error (if any) {error}\n"
-    message += f"Detailed job status: {str(detailed_status)}
+    message += f"Detailed job status: {str(detailed_status)}"
     message += f"Job Details: {str(get_job_info(project, job))}\n"
     notify_slack(message)
 

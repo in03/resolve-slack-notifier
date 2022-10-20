@@ -7,7 +7,7 @@ import dotenv
 
 from loguru import logger
 
-logger.add("renderbot_lastrun.log")
+logger.add(os.path.join(os.path.dirname(__file__), "renderbot_lastrun.log"))
 
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
